@@ -21,7 +21,8 @@ export default class list extends Component{
     }
 
     componentWillMount(){
-        axios.get(`https://cnodejs.org/api/v1/topics?page=${this.state.page}&tab=${this.state.tab}`).then((res)=>{
+        axios.get(`https://cnodejs.org/api/v1/topics?page=${this.state.page}&tab=${this.state.tab}`)
+        .then((res)=>{
             this.setState({
                 list: res.data.data,
                 loadingStatus: false
@@ -48,10 +49,18 @@ export default class list extends Component{
         let wHeight = window.innerHeight
         let bHeight = document.body.clientHeight || document.documentElement.clientHeight
         if(top+wHeight >= bHeight){
-            this.setState((state)=>({
-                loadingStatus: true,
-                page: ++state.page
-            }), ()=>{
+            // this.setState((state)=>({
+            //     loadingStatus: true,
+            //     page: ++state.page
+            // }), ()=>{
+            this.setState((state)=>{
+                return (
+                    {
+                        loadingStatus: true,
+                        page: ++state.page
+                    }
+                )
+            }, ()=>{
                 axios.get(`https://cnodejs.org/api/v1/topics/?tab=${this.state.tab}&page=${this.state.page}`).then((res)=>{
                     this.setState((state)=>({
                         list: state.list.concat(res.data.data),

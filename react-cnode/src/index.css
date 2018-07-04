@@ -59,7 +59,7 @@ button:hover{
   top:42px;
   bottom:0;
   width:100%;
-  background-color:#fff;
+  /* background-color:#fff; */
 }
 .loading:after{
   content:'';
