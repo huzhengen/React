@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-// import '../../App/App.css';
+import '../../App/App.css';
 import server from '../../js/server.js';
 import MovieList from '../../subcomponents/MovieList/MovieList.js';
-// import Search from '../../subcomponents/Search/Search.js';
+import Search from '../../subcomponents/Search/Search.js';
 import { Spin, Icon } from 'antd';
 import 'antd/dist/antd.css';
 
@@ -72,6 +72,7 @@ class App extends Component{
         }else{
             return (
                 <div>
+                    <Search />
                     <MovieList movieList={this.state.playingMovieList} title={this.state.playingTitle} url={'fetchPlayingMovieList'} />
                     <MovieList movieList={this.state.willplayMovieList} title={this.state.willplayTitle} url={'fetchWillMovieList'} />
                 </div>

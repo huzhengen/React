@@ -10,7 +10,7 @@
     position: relative; }
     .contentStyle .titleStyle span:nth-child(2) {
       position: absolute;
-      right: 0px; }
+      right: 0; }
       .contentStyle .titleStyle span:nth-child(2) a {
         color: black;
         text-decoration: none; }
@@ -21,28 +21,28 @@
     margin-top: 15px;
     background-color: #fff;
     border-radius: 5px; }
-    .contentStyle .movieList ul li {
-      float: left;
-      width: 33%;
-      list-style: none;
-      text-align: center; }
-      .contentStyle .movieList ul li a {
-        text-decoration: none;
+  .contentStyle .movieList li {
+    float: left;
+    width: 33%;
+    list-style: none;
+    text-align: center; }
+    .contentStyle .movieList li a {
+      text-decoration: none;
+      text-align: center;
+      position: relative; }
+      .contentStyle .movieList li a .wp img {
+        width: 87px;
+        height: 125px;
+        text-align: center; }
+      .contentStyle .movieList li a .info {
+        font-size: 12px;
+        width: 87px;
+        height: 20px;
         text-align: center;
-        position: relative; }
-        .contentStyle .movieList ul li a .wp img {
-          width: 87px;
-          height: 125px;
-          text-align: center; }
-        .contentStyle .movieList ul li a .info {
-          font-size: 12px;
-          width: 87px;
-          height: 20px;
-          text-align: center;
-          display: inline-block;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          margin: 0;
-          padding: 0;
-          color: #494949; }
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin: 0;
+        padding: 0;
+        color: #494949; }
