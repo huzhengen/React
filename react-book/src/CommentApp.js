@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import CommentInput from './CommentInput'
 import CommentList from './CommentList'
+import Button from './components/Button';
 
 class CommentApp extends Component{
 	constructor(){
@@ -55,6 +56,12 @@ class CommentApp extends Component{
 				comments={this.state.comments}
 				onDeleteComment={this.handleDeleteComment.bind(this)}
 				/>
+				<div>
+					<hr/>
+					<Button value="按钮1" />
+					<Button value="按钮2" />
+					<Button value="按钮3" />
+				</div>
 			</div>
 		)
 	}
