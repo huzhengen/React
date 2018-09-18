@@ -2,7 +2,7 @@
   "name": "react-book",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://huzhengen.github.io/React/react-book",
+  "homepage" : "https://huzhengen.github.io/React/react-book/build",
   "dependencies": {
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
